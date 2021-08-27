@@ -43,9 +43,6 @@
             transform: translateY(4px);
         }
     }
-    &:focus {
-        border-color: $colorTextActive;
-    }
     &_active {
         position: relative;
         z-index: 1;

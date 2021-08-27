@@ -27,6 +27,7 @@
         &_active {
             display: flex;
             z-index: 1;
+            animation: menu 500ms;
         }
     }
     &__link {
@@ -41,5 +42,14 @@
         &:hover {
             color: $black;
         }
+    }
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

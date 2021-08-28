@@ -1,0 +1,20 @@
+.links {
+    list-style: none;
+    padding: 0;
+
+    &__link {
+        font-size: 13px;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 1.007;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding-left: 25px;
+        transition: color 500ms;
+
+        &:hover {
+            color: $black;
+            background: url('../img/arrow.svg') left center no-repeat;
+        }
+    }
+}

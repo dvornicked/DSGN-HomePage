@@ -243,6 +243,10 @@ $bg-nine: #cecece;
 
             .projects__like {
                 margin-top: 0;
+
+                span {
+                    white-space: nowrap;
+                }
             }
         }
         &_nine {

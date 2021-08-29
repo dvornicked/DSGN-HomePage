@@ -1,0 +1,116 @@
+$bg-studio: #ff9b6d;
+
+.studio {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+
+    &__left, &__staff {
+        grid-column: span 5;
+    }
+    &__right, &__persons {
+        grid-column: span 11;
+    }
+    &__left {
+        background: $bg-studio;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255,255,255)" stroke-width="1" /></svg>');
+        }
+    }
+    &__title {
+        font-size: 48px;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: normal;
+        margin: 62.3% 0 35.4% 46.2%;
+    }
+    &__right {
+        padding: 9.1% 15.9% 4.3% 9.6%;
+        display: flex;
+    }
+    &__text {
+        font-size: 18px;
+        color: $colorText;
+        line-height: 1;
+        font-family: "roboto_condensedlight";
+        margin: 5.4% 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &_bold-italic {
+            font-family: "roboto_condenseditalic";
+        }
+    }
+    &__info {
+        flex-basis: 48%;
+        margin-right: 4%;
+    }
+    &__desc {
+        flex-basis: 48%;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+    &__subtitle {
+        padding: 1%;
+        font-size: 14px;
+        color: $colorText;
+        text-transform: uppercase;
+        line-height: 1.286;
+        margin: 9.4% 0 5%;
+        font-family: "roboto_condensedbold";
+        border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin: 2.5% 0;
+
+        &-item {
+            font-size: 12px;
+            color: $colorText;
+            text-transform: uppercase;
+            line-height: 1.167;
+
+            &:first-child {
+                margin-right: 9.4%;
+            }
+        }
+    }
+    &__staff {
+        padding: 12.9% 6.4% 19.3% 35.4%;
+
+        &-text {
+            font-size: 14px;
+            color: $colorText;
+            line-height: 1;
+            font-family: "roboto_condensedlight";
+            margin-bottom: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-title {
+            font-size: 14px;
+            color: $colorText;
+            text-transform: uppercase;
+            line-height: 1;
+            font-family: "roboto_condensedbold";
+        }
+    }
+    &__persons {
+        margin-top: 5.7%;
+        padding-right: 15.9%;
+    }
+}

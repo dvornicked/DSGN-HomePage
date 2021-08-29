@@ -40,6 +40,10 @@ $bg-nine: #cecece;
                 font-weight: normal;
                 line-height: 1;
                 margin: 12.9% 0 34.4% 46.2%;
+
+                @media (min-width: 1500px) {
+                    @include dynamicText(300%, 96, 48, 1500px, 3000, 1500)
+                }
             }
         }
         &_two {
@@ -47,6 +51,10 @@ $bg-nine: #cecece;
             grid-row: span 2;
             background: url('../img/image2.png') right top no-repeat $white;
             background-size: cover;
+
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image2-2x.png');
+            }
 
             .projects__info {
                 margin-left: 17.5%;
@@ -63,6 +71,10 @@ $bg-nine: #cecece;
             grid-row: span 1;
             background: url('../img/image3.png') left center no-repeat $bg-three;
             background-size: cover;
+
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image3-2x.png');
+            }
 
             .projects__like {
                 margin-top: 5.8%;
@@ -91,6 +103,10 @@ $bg-nine: #cecece;
             padding-top: 78%;
             display: flex;
 
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image4-2x.png');
+            }
+
             .projects__counter {
                 display: flex;
                 align-items: flex-start;
@@ -112,6 +128,10 @@ $bg-nine: #cecece;
             grid-row: span 2;
             background: url('../img/image5.png') center top no-repeat;
             background-size: cover;
+
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image5-2x.png');
+            }
 
             .projects__like {
                 margin-top: 9.2%;
@@ -152,6 +172,10 @@ $bg-nine: #cecece;
             background-size: cover;
             display: flex;
 
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image6-2x.png');
+            }
+
             .projects__info {
                 margin-left: 48.1%;
                 margin-top: 12.1%;
@@ -173,6 +197,10 @@ $bg-nine: #cecece;
             background: url('../img/image7.png') left top no-repeat $white;
             background-size: 100%;
 
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image7-2x.png');
+            }
+
             .projects__info {
                 margin-left: 52.6%;
                 margin-top: 10.7%;
@@ -193,6 +221,10 @@ $bg-nine: #cecece;
             background-size: 100%;
             display: flex;
             padding-top: 27.2%;
+
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image8-2x.png');
+            }
 
             .projects__info {
                 margin-left: 20.4%;
@@ -218,6 +250,10 @@ $bg-nine: #cecece;
             grid-row: span 1;
             background: url('../img/image9.png') left top no-repeat $bg-nine;
             background-size: 100%;
+
+            @media (min-resolution: 2dppx), (min-width: 1500px) {
+                background-image: url('../../img/image9-2x.png');
+            }
 
             .projects__info {
                 margin-left: 50%;
@@ -265,6 +301,10 @@ $bg-nine: #cecece;
         line-height: 1;
         font-weight: normal;
         margin: 0 0 10px 0;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(150%, 48, 24, 1500px, 3000, 1500)
+        }
     }
     &__desc {
         font-size: 12px;
@@ -273,6 +313,10 @@ $bg-nine: #cecece;
         text-transform: uppercase;
         line-height: 1;
         margin: 0;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(75%, 24, 12, 1500px, 3000, 1500)
+        }
 
         &_lowercase {
             text-transform: initial;
@@ -294,6 +338,11 @@ $bg-nine: #cecece;
         padding-left: 25px;
         padding-right: 25px;
         text-decoration: none;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500)
+        }
+
         span {
             border-bottom: 1px solid transparent;
             transition: border-color 500ms;
@@ -317,5 +366,9 @@ $bg-nine: #cecece;
         margin-bottom: 0;
         margin-left: 21.5%;
         margin-top: 11.8%;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500)
+        }
     }
 }

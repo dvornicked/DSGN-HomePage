@@ -24,5 +24,9 @@
         line-height: 1.091;
         display: block;
         margin: 5px 0 0 0;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(68.75%, 22, 11, 1500px, 3000, 1500)
+        }
     }
 }

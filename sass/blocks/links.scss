@@ -12,6 +12,10 @@
         padding-left: 25px;
         transition: color 500ms;
 
+        @media (min-width: 1500px) {
+            @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500)
+        }
+
         &:hover {
             color: $black;
             background: url('../img/arrow.svg') left center no-repeat;

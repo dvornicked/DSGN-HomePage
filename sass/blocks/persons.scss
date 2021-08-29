@@ -69,3 +69,31 @@
         }
     }
 }
+
+@media (max-width: 980px) {
+    .persons {
+        flex-wrap: wrap;
+
+        &__item {
+            flex-basis: 47%;
+            margin-right: 3%;
+            margin-top: 3.5%;
+            margin-bottom: 3.5%;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .persons {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        &__item {
+            flex-basis: auto;
+            margin-right: 0;
+        }
+        &__post {
+            margin-top: 0;
+        }
+    }
+}

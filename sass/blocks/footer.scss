@@ -1,0 +1,88 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__map {
+        grid-column: span 1;
+        background-color: silver;
+    }
+
+    &__info {
+        grid-column: span 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: block;
+        max-width: 100%;
+    }
+    &__slogan {
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 1;
+        color: $colorText;
+        margin: 0;
+        margin-top: 5px;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500)
+        }
+    }
+    &__socials {
+        margin-top: 60px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    &__address {
+        font-size: 13px;
+        color: $colorText;
+        text-transform: uppercase;
+        line-height: 1.077;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500)
+        }
+    }
+    &__contacts {
+        font-size: 13px;
+        color: $colorText;
+        text-transform: uppercase;
+        line-height: 1.077;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500)
+        }
+    }
+    &__tel, &__mail {
+        text-decoration: none;
+        color: $colorText;
+        line-height: 1.077;
+        display: inline-block;
+        transition-property: color;
+        transition-duration: 500ms;
+        &:hover {
+            color: $colorTextActive;
+        }
+    }
+    &__copy {
+        font-size: 12px;
+        color: $colorText;
+        line-height: 1.8;
+        text-align: center;
+        flex-basis: 100%;
+        margin: 9% 0 7% 0;
+
+        @media (min-width: 1500px) {
+            @include dynamicText(75%, 24, 12, 1500px, 3000, 1500)
+        }
+    }
+    &__left {
+        margin-left: 15.3%;
+        margin-top: 20%;
+    }
+    &__right {
+        margin-right: 22%;
+        margin-top: 20%;
+    }
+}
